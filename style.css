@@ -63,3 +63,56 @@ button:disabled {
   margin-top: 20px;
   margin-bottom: 0;
 }
+
+.output-header {
+  display: flex;
+  justify-content: flex-end; /* ボタンを右寄せ */
+  margin-top: 20px;
+}
+
+.copy-btn {
+  width: auto;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #2ecc71; /* 緑系の色で差別化 */
+  margin-bottom: 5px;
+}
+
+.copy-btn:hover {
+  background-color: #27ae60;
+}
+
+.output-area textarea {
+  margin-top: 0; /* ボタンを追加したのでマージンを調整 */
+}
+
+footer {
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 11px;
+    color: #777;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer #site-version {
+    color: #aaa;
+}
+
+footer .footer-link {
+    color: #aaa;
+    text-decoration: none;
+}
+
+footer .footer-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
