@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全文字漢字化ジェネレーター</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>全文字漢字化ジェネレーター</h1>
+    <p>入力された文章のひらがな・カタカナを、無理やり漢字に変換します。</p>
+    
+    <div class="input-area">
+      <textarea id="inputText" placeholder="ここに文章を入力してください..."></textarea>
+    </div>
+    
+    <button id="convertBtn" disabled>辞書読み込み中...</button>
+    
+    <div class="output-area">
+      <div class="output-header">
+        <button id="copyBtn" class="copy-btn">コピーする</button>
+      </div>
+      <textarea id="outputText" readonly placeholder="変換結果がここに表示されます"></textarea>
+    </div>
+  </div>
+
+  <script src="./js/converter.js"></script>
+  <script src="./js/main.js"></script>
+
+  <footer>
+        <p>&copy; 2026 ikkunN700S</p>
+        <p id="site-version"></p>
+        <a href="" id="share-link" class="footer-link">ページを共有する</a>
+  </footer>
+
+  <script src="./js/version.js"></script>
+  <script src="./js/sharelink.js"></script>
+</body>
+</html>
