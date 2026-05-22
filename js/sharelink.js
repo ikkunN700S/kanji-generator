@@ -3,8 +3,8 @@ document.getElementById('share-link').addEventListener('click', async (e) => {
 
     // シェアデータ
     const shareData = {
-        title: '地震データベースWeb',
-        text: '過去の地震データを検索・閲覧できます',
+        title: '漢字ジェネレーター',
+        text: 'むりやり漢字だけの文章にします',
         url: window.location.href
     };
 
